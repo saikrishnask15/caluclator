@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       *{
+        margin: 0;
+        box-sizing: border-box;
+       }
+       .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(240, 218, 218);
+       
+       }
+
+        .caluclator{
+            display: flex;
+            background-color:rgb(50, 46, 46);
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            height:500px;
+            border-radius: 20px;
+        }
+        .display-container{
+            background-color:rgb(50, 46, 46);
+            padding: 10px;
+            font-family: "Lucida Console", "Courier New", monospace;
+            font-size: 20px;
+            border: none;
+            border-radius: 20px;
+            width: 250px;
+            height: 100px;
+            color:aliceblue;
+           
+        }
+        .sub-container{
+            display: flex;
+            margin: 10px; 
+            
+           
+        }
+        .sub-container button{  
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border:none;
+            border-radius: 30px;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            margin: 5px;
+            font-family: "Lucida Console", "Courier New", monospace;
+            font-size: 15px;
+            background-color: rgb(52, 50, 50);
+            color: aliceblue;
+           
+
+        }
+        #submit-button{
+          background-color:rgb(254, 95, 32);
+          color:white;
+        }
+
+    </style>
+</head>
+<body > 
+    <div class="container">
+    <div class="caluclator">
+        <input class="sub-container display-container" id="display" readonly>
+        <div class="sub-container">
+           <button id="button-ac">AC</button>
+           <button id="button-del">DEL</button>
+           <button id="button-mod">%</button>
+           <button id="button-div">/</button>
+        </div>
+        <div class="sub-container" >
+            <button id="button7">7</button>
+            <button id="button8">8</button>
+            <button id="button9">9</button>
+            <button id="button-plus">+</button>
+        </div>
+        <div class="sub-container">
+            <button id="button4">4</button>
+            <button id="button5">5</button>
+            <button id="button6">6</button>
+            <button id="button-mul">*</button>
+        </div>
+        <div class="sub-container">
+            <button id="button3">3</button>
+            <button id="button2">2</button>
+            <button id="button1">1</button>
+            <button id="button-minus">-</button>
+        </div>
+        <div class="sub-container">
+            <button id="button-0">0</button>
+            <button id="button-00">00</button>
+            <button id="button-pulstop">.</button>
+            <button id="submit-button">=</button>
+        </div>
+    </div>
+    </div>
+    <div>&#169copyrights sk</div>
+    <script src="caluclator.js"></script>
+</body>
+</html>
